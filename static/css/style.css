@@ -1,0 +1,159 @@
+html,
+body {
+  font-size: 15px;
+  height: 100%;
+
+}
+body {
+  font-family: "Open Sans","Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  background: #FFFFFF;
+  margin: 0px;
+  padding: 0px;
+  color: #555555;
+  text-rendering: optimizeLegibility;
+  min-width: 320px;
+}
+a {
+  text-decoration: none;
+}
+/* ------------------------------------------------------------ */
+/* Responsive Setup */
+/* ------------------------------------------------------------ */
+@media screen and (min-width: 1000px){
+  .wrapper{
+     width: 1000px;
+  }
+}
+@media (max-width: 400px){
+  .wrapper{
+     width: 100%;
+  }
+}
+@media print
+{
+  .mobi{
+      display: none !important;
+  }
+}
+/* ------------------------------------------------------------ */
+/* Genaral Layout */
+/* ------------------------------------------------------------ */
+.page_wrapper{
+   background: white;
+}
+.wrapper{
+  padding-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  padding:8px;
+  box-sizing: border-box;
+
+}
+/* entrance */
+.entrance_page {
+  background: rgb(239,237,235);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.entrance_box {
+  max-width: 380px;
+  height: 230px;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 5px;
+
+}
+.entrance_watchout_logo_section {
+  text-align: right;
+  position: relative;
+  text-align: center;
+}
+.entrance_watchout_logo {
+  width: 125px;
+  height: 20px;
+  /*
+  position: absolute;
+  right: 50px;
+  top:20px;
+  */
+  background: url('../images/watchout_logo_black.png');
+  background-size: auto 18px;
+  background-repeat: no-repeat;
+
+}
+.entrance_watchout_logo:hover {
+  background: url('../images/watchout_logo_white.png');
+  background-size: auto 18px;
+  background-repeat: no-repeat;
+}
+.entrance_watchout_logo:hover {
+  background-image: url('../images/watchout_logo_white.png');
+}
+.entracne_ask_title_img {
+  width: 100%;
+  margin-bottom: 5px;
+}
+.entrance_city_section {
+  display: inline-block;
+  margin-left: 30px;
+  vertical-align: bottom;
+}
+.entrance_city {
+  vertical-align: bottom;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  border-left: 5px solid rgb(53,55,53);
+  /* border-right: 3px solid rgb(63,65,63);*/
+  min-width: 50px;
+  padding: 1px 10px;
+  box-sizing: border-box;
+  font-weight: 700;
+
+}
+@media (max-width: 400px){
+  .entrance_city_section{
+    text-align: center;
+  }
+  .entrance_city {
+    padding: 1px 3px;
+  }
+}
+.entrance_city:hover {
+  background: rgb(53,55,53);
+  transition: background 0.3s ease-out;
+  color: white;
+}
+.entrance_info {
+  background: rgb(53,55,53);
+  color: white;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  padding-top: 4px;
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+  border-radius: 100%;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+.entrance_info:hover {
+  transition: background 0.3s ease-out;
+  background: white;
+  color: rgb(53,55,53);
+}
+.entrance_city_img {
+  width: 100%;
+}
+.entrance_city_section a, .entrance_city_section a:visited, .entrance_city_section a:hover {
+  color: rgb(53,55,53);
+}
+
