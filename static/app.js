@@ -14,6 +14,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //Routes
 app.get('/news', tumblr.index);
 app.get('/news/:news_id', tumblr.post);
+app.get('/news/:news_id/:sub_id', tumblr.post);
 app.get('/', function(req, res){
 	return res.render('index');
 	

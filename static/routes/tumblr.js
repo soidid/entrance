@@ -52,9 +52,10 @@ exports.index = function(req, res){
 exports.post = function(req, res){
 
   var name = req.params.news_id;
+  var sub_id = req.params.sub_id;
   var options = {
       host: 'news.watchout.tw',
-      path: '/post/'+name,
+      path: '/post/'+name+'/'+sub_id,
       method: 'GET'
   };
   console.log(name);
