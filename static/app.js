@@ -2,7 +2,7 @@ var express = require('express'),
     tumblr = require('./routes/tumblr'),
     http = require('http'),
     path = require('path');
-    
+
 
 var app = module.exports = express();
 
@@ -13,11 +13,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 //Routes
 app.get('/news', tumblr.index);
-app.get('/news/:news_id', tumblr.post);
 app.get('/news/:news_id/:sub_id', tumblr.post);
+app.get('/news/:news_id', tumblr.post);
 app.get('/', function(req, res){
 	return res.render('index');
-	
+
 });
 
 app.listen(app.get('port') , function () {
